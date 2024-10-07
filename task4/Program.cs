@@ -13,16 +13,18 @@ namespace task4
             Console.WriteLine("Введите действительное число");
             var x = double.Parse(Console.ReadLine());
             var y = MyFunction(x);
-            Console.WriteLine($"+(x)={y}");
-
+            Console.WriteLine($"F(x)={y}");
             Console.ReadKey();
                
         }
         static double MyFunction(double x)
 
         {
-           //throw new NotImplementedException();
-           return Math.S
+            //throw new NotImplementedException();
+
+            return (((2) / (Math.Pow(x, 2) + 25)) + Math.Cos(x)) / (Math.Sqrt(Math.Pow(x, 4) + 1) + (Math.Sin(x) + Math.Cos(x)) / 2);
+                
+        
         }
 
     }
