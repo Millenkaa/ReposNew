@@ -10,19 +10,17 @@ namespace task6._2
     {
         static void Main(string[] args)
         {
-            var s = "программа";
-            Console.WriteLine($"Из слова \"{$}\" получили ");
+            string word = "программа";
+            Console.WriteLine(word,"Из слова \"{word}\" получили: ");
 
-            var word1 = s
-                .Remove()
-                .Remove()
+            string word1 = word.Substring(0, 1) + word.Substring(5, 1) + word.Substring(4, 1);
 
+            string word2 = word.Substring(4, 3) + word.Substring(0, 1) + word.Substring(5, 1);
 
-                Console.WriteLine(word1);
+                Console.WriteLine("Первое слово: " + word1);
+            Console.WriteLine("Второе слово: " + word2);
 
-            var word2 = 
-                s.
-                .
+           
 
             Console.ReadKey();
 
